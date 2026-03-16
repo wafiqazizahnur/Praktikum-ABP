@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Praktikum 3 - Efek Animasi</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("button").click(function () {
+          $("div").animate({
+            height: "toggle",
+          });
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h1>Latihan Efek Animasi</h1>
+
+    <button>Start Animation</button>
+
+    <p>
+      Secara default, elemen HTML memiliki posisi statis dan tidak dapat
+      dipindah.
+    </p>
+
+    <div
+      style="
+        background: #1b0ad5;
+        height: 100px;
+        width: 100px;
+        position: absolute;
+      "
+    ></div>
+  </body>
+</html>
